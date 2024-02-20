@@ -1,0 +1,331 @@
+<head>
+    <title></title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    </head>
+    <style>
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #5880de;
+      }
+     header > img {
+        height: auto;
+        max-width: 10rem;
+        width: 100%;
+      }
+      
+      .hi {
+        display: flex;
+      }
+      
+      .hi > button {
+        border: none;
+        padding: 0.4rem 2rem;
+        background-color: transparent;
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: rgb(244, 236, 236);
+        cursor: pointer;
+      }
+      
+      header > input {
+        flex-grow: 0.6;
+        padding: 0.5rem;
+        margin: 0.5rem 0;
+        background-color: aliceblue;
+        border: 2px solid whitesmoke;
+        border-radius: 4px;
+        box-sizing: border-box;
+        font-size: 20px;
+      }
+      
+      .header--nav-login {
+        background-color: rgb(253, 245, 245) !important;
+        color: #0e0f0f !important;
+        font-weight: 400;
+      }
+      .hlo {
+            display: flex;
+            background-color: #333; /* Background color for the navigation bar */
+            padding: 10px;
+            justify-content: space-around;
+            color: #fff; /* Text color for the links */
+        }
+
+        .hlo a {
+            text-decoration: none;
+            color: #fff;
+            padding: 8px 16px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .hlo a:hover {
+            background-color: #555; /* Background color on hover */
+        }
+        h4{
+            text-decoration: line-through;
+            color:#555;
+        }
+        h1{
+            font-size: 25px;
+        }
+      
+    </style>
+    <header>
+    <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/fkheaderlogo_exploreplus-44005d.svg">
+    <input type="text" placeholder="Search for products,Brands and More">
+    
+    <nav class="hi">
+    <button  class="header--nav-login">
+     <span onclick="window.location.href='login.html'">Login</span>
+          </button>
+    <button>
+     <span onclick="window.location.href='cart.html'">Cart</span>
+          </button>
+    <button>
+     <span onclick="window.location.href='seller.html'">Become a seller</span>
+          </button>
+    </header>
+    <nav class="hlo">
+        <a href="http://127.0.0.1:5501/src/app/grocery.html">Grocery</a>
+        <a href="http://127.0.0.1:5501/src/app/mobile.html">Mobiles</a>
+        <a href="http://127.0.0.1:5501/src/app/fashion.html">Fashion</a>
+        <a href="http://127.0.0.1:5501/src/app/electronics.html">Electronics</a>
+        <a href="http://127.0.0.1:5501/src/app/home&furnitures.html">Home & furnitures</a>
+        <a href="http://127.0.0.1:5501/src/app/travel.html">travel</a>
+        <a href="http://127.0.0.1:5501/src/app/beauty,toys&more.html">Beauty,Toys &more</a>
+        <a href="http://127.0.0.1:5501/src/app/wheelers.html">wheelers</a>
+    </nav>
+    <body>
+        
+<h1>Wheelers</h1>
+<div class="grid gap-8 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 p-4 md:p-2 xl:p-5">
+
+ 
+ <div
+     class="relative bg-white border rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 transform transition duration-500 hover:scale-105">
+     
+         
+     
+     <div class="p-2 flex justify-center">
+         <a href="">
+             <img class="rounded-md"
+                 src="https://rukminim2.flixcart.com/image/312/312/xif0q/motorcycle/j/r/k/-original-imagnrh5fmzhwgn7.jpeg?q=70"
+                 loading="lazy">
+         </a>
+     </div>
+
+     <div class="px-4 pb-3">
+         <div>
+             <a href="#">
+                 <h3
+                     class="text-xl font-semibold tracking-tight hover:text-violet-800 dark:hover:text-violet-300 text-gray-900 dark:text-white ">
+                     Hero Xtreme 160R (Double Disc) Booking for Ex-Showroom Price
+                     4.6(120)
+                     ₹1,22,886<h4>₹1,25,26</h4>11% off
+                 </h3>
+                 
+             </a>
+         </div>
+     </div>
+
+ </div>
+
+ <!-- card  -->
+ <div
+     class="relative bg-white border rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 transform transition duration-500 hover:scale-105">
+    
+
+     <div class="p-2 flex justify-center">
+         <a href="#">
+             <img class="rounded-md"
+                 src="https://rukminim2.flixcart.com/image/312/312/xif0q/electric-bike-scooter/y/r/2/-original-imagg9u3nghfh4un.jpeg?q=70"
+                 loading="lazy">
+         </a>
+     </div>
+
+     <div class="px-4 pb-3">
+         <div>
+             <a href="#">
+                 <h3
+                     class="text-xl font-semibold tracking-tight hover:text-violet-800 dark:hover:text-violet-300 text-gray-900 dark:text-white ">
+                     Hero Glamour XTEC (Disc) Booking for Ex-Showroom Price
+              
+                     ₹85,398<h4>₹95,398</h4>10% off 
+                 </h3>
+             </a>
+
+         </div>
+     </div>
+ </div>
+
+ <!-- card  -->
+ <div
+     class="relative bg-white border rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 transform transition duration-500 hover:scale-105">
+     
+     <div class="p-2 flex justify-center">
+         <a href="#">
+             <img class="rounded-md"
+                 src="https://rukminim2.flixcart.com/image/312/312/xif0q/motorcycle/r/t/h/-original-imagnrh5bbbffupn.jpeg?q=70"loading="lazy">
+         </a>
+     </div>
+
+     <div class="px-4 pb-3">
+         <div>
+             <a href="#">
+                 <h3
+                     class="text-xl font-semibold tracking-tight hover:text-violet-800 dark:hover:text-violet-300 text-gray-900 dark:text-white ">
+                     Hero Super Splendor Xtec (Drum) Booking for Ex-Showroom Price
+                     4.5(1,080)
+                     ₹80,250<h4>₹81,250</h4>1% off
+                                      </h3>
+             </a>
+             
+         </div>
+     </div>
+ </div>
+
+ <!-- card  -->
+ <div
+     class="relative bg-white border rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 transform transition duration-500 hover:scale-105">
+
+     
+
+     <div class="p-2 flex justify-center">
+         <a href="https://tailwindflex.com/tag/form">
+             <img class="rounded-md"
+                 src="https://rukminim2.flixcart.com/image/312/312/xif0q/electric-bike-scooter/u/g/q/-original-imagg9xyeyr5gerx.jpeg?q=70"
+                 loading="lazy">
+         </a>
+     </div>
+
+
+     <div class="px-4 pb-3">
+         <div>
+             <a href="https://tailwindflex.com/tag/form">
+                 <h3
+                     class="text-xl font-semibold tracking-tight hover:text-violet-800 dark:hover:text-violet-300 text-gray-900 dark:text-white ">
+                     Hero Maestro Edge 125 (Drum) Booking for Ex-Showroom Price
+
+₹80,606<h4>₹86,76</h4>67% off
+                 </h3>
+             </a>
+
+         </div>
+     </div>
+ </div>
+ <div
+     class="relative bg-white border rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 transform transition duration-500 hover:scale-105">
+     
+     <div class="p-2 flex justify-center">
+         <a href="#">
+             <img class="rounded-md"
+                 src="https://rukminim2.flixcart.com/image/312/312/xif0q/scooter-moped/i/2/e/-original-imagtrfazw2qnz5x.jpeg?q=70"
+                 loading="lazy">
+         </a>
+     </div>
+
+
+     <div class="px-4 pb-3">
+         <div>
+             <a href="#">
+                 <h3
+                     class="text-xl font-semibold tracking-tight hover:text-violet-800 dark:hover:text-violet-300 text-gray-900 dark:text-white ">
+                     Hero DESTINI PRIME Booking for Ex-Showroom Price
+                     4.5(451)
+                     ₹71,489
+                 </h3>
+             </a>
+
+         </div>
+     </div>
+ </div>
+
+ <!-- card  -->
+ <div
+     class="relative bg-white border rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 transform transition duration-500 hover:scale-105">
+    
+     <div class="p-2 flex justify-center">
+         <a href="#">
+             <img class="rounded-md"
+                 src="https://rukminim2.flixcart.com/image/312/312/xif0q/motorcycle/e/2/s/2023-self-kick-xpulse-200t-4v-disc-booking-for-ex-showroom-price-original-imagtnkfznx3fkwg.jpeg?q=70"
+                 loading="lazy">
+         </a>
+     </div>
+     <div class="px-4 pb-3">
+         <div>
+             <a href="#">
+                 <h3
+                     class="text-xl font-semibold tracking-tight hover:text-violet-800 dark:hover:text-violet-300 text-gray-900 dark:text-white ">
+                     Hero XPulse 200T 4V Booking for Ex-Showroom Price
+                     4.5(14)
+                     ₹1,27,300
+                 </h3>
+             </a>
+
+         </div>
+     </div>
+ </div>
+
+ <!-- card  -->
+ <div
+     class="relative bg-white border rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 transform transition duration-500 hover:scale-105">
+
+    
+
+     <div class="p-2 flex justify-center">
+         <a href="https://tailwindflex.com/tag/badge">
+             <img class="rounded-md"
+                 src="https://rukminim2.flixcart.com/image/312/312/xif0q/electric-bike-scooter/x/o/y/-original-imagzhp4gqnhq5sd.jpeg?q=70"
+                 loading="lazy">
+         </a>
+     </div>
+
+     <div class="px-4 pb-3">
+         <div>
+             <a href="https://tailwindflex.com/tag/badge">
+                 <h3
+                     class="text-xl font-semibold tracking-tight hover:text-violet-800 dark:hover:text-violet-300 text-gray-900 dark:text-white ">
+                     VIDA Powered by Hero V1 Pro Booking for Ex-Showroom Price (with P...
+                     4.3(871)
+                     ₹1,45,900 
+                 </h3>
+             </a>
+           
+         </div>
+     </div>
+ </div>
+
+ <!-- card  -->
+ <div
+     class="relative bg-white border rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 transform transition duration-500 hover:scale-105">
+     
+     <div class="p-2 flex justify-center">
+         <a href="#">
+             <img class="rounded-md"
+                 src="https://rukminim2.flixcart.com/image/312/312/xif0q/electric-bike-scooter/z/a/w/-original-imagrtfujzn4pkz2.jpeg?q=70" loading="lazy">
+         </a>
+     </div>
+
+
+     <div class="px-4 pb-3">
+         <div>
+             <a href="#">
+                 <h3
+                     class="text-xl font-semibold tracking-tight hover:text-violet-800 dark:hover:text-violet-300 text-gray-900 dark:text-white ">
+                     VIDA Powered by Hero V1 Pro Booking for Ex-Showroom Price (with P...
+                     4.3(871)
+                     ₹1,45,900
+                 </h3>
+             </a>
+
+         </div>
+     </div>
+
+ </div>
+
+ 
+    </body>
+    

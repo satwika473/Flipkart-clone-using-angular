@@ -1,0 +1,227 @@
+<head>
+    <title></title>
+    </head>
+    <style>
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #5880de;
+      }
+     header > img {
+        height: auto;
+        max-width: 10rem;
+        width: 100%;
+      }
+      
+      .hi {
+        display: flex;
+      }
+      
+      .hi > button {
+        border: none;
+        padding: 0.4rem 2rem;
+        background-color: transparent;
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: rgb(244, 236, 236);
+        cursor: pointer;
+      }
+      
+      header > input {
+        flex-grow: 0.6;
+        padding: 0.5rem;
+        margin: 0.5rem 0;
+        background-color: aliceblue;
+        border: 2px solid whitesmoke;
+        border-radius: 4px;
+        box-sizing: border-box;
+        font-size: 20px;
+      }
+      
+      .header--nav-login {
+        background-color:  #5880de;
+        color: #fcfdfd !important;
+        font-weight: 300;
+        border-radius: 9px;
+       
+        
+      }
+      
+      form {
+           margin: 10% 20% 20% 30%;
+            background-color: #6339d8; /* White background color for the form */
+            padding: 50px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            max-width:fit-content;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            box-sizing: border-box;
+            background-color: #fff; /* White background color for the input boxes */
+            border: 1px solid #ccc; /* Border color */
+            border-radius: 3px;
+        }
+
+        .btn {
+            width: 100%;
+            padding: 10px;
+            background: linear-gradient(to bottom, #2de8eb 0%, #4255a7 100%); /* Gradient background color for the button */
+            color: #fff;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            transition: background 0.3s ease; 
+        }
+
+        .btn:hover {
+            background: linear-gradient(to bottom, #c185ce 0%, #4bd5da 100%); 
+        }
+
+        h4 {
+            color: #fff; 
+        }
+        .error-message {
+            color: red;
+            margin-bottom: 15px;
+        }
+        .hlo {
+            display: flex;
+            background-color: #333; /* Background color for the navigation bar */
+            padding: 10px;
+            justify-content: space-around;
+            color: #fff; /* Text color for the links */
+        }
+
+        .hlo a {
+            text-decoration: none;
+            color: #fff;
+            padding: 8px 16px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .hlo a:hover {
+            background-color: #555; /* Background color on hover */
+        }
+        .container {
+      width: 50%;
+      margin: auto;
+    }
+    #error-message {
+      color: red;
+    }
+    h1{
+        margin-left: 0%;
+    }
+    label{
+        color: white;
+    }
+    .btn{
+            width: 100%;
+            padding: 10px;
+            background: linear-gradient(to bottom, #2de8eb 0%, #4255a7 100%); /* Gradient background color for the button */
+            color: #fff;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            transition: background 0.3s ease; 
+        }
+
+        .btn:hover {
+            background: linear-gradient(to bottom, #c185ce 0%, #4bd5da 100%); 
+        }
+    </style>
+    <header>
+    <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/fkheaderlogo_exploreplus-44005d.svg">
+    <input type="text" placeholder="Search for products,Brands and More">
+    
+    <nav class="hi">
+    <button  class="header--nav-login">
+     <span onclick="window.location.href='login.html'">Login</span>
+          </button>
+    <button>
+     <span onclick="window.location.href='cart.html'">Cart</span>
+          </button>
+    <button>
+     <span onclick="window.location.href='seller.html'">Become a seller</span>
+          </button>
+    </header>
+    <nav class="hlo">
+        <a href="http://127.0.0.1:5501/src/app/grocery.html">Grocery</a>
+        <a href="http://127.0.0.1:5501/src/app/mobile.html">Mobiles</a>
+        <a href="http://127.0.0.1:5501/src/app/fashion.html">Fashion</a>
+        <a href="http://127.0.0.1:5501/src/app/electronics.html">Electronics</a>
+        <a href="http://127.0.0.1:5501/src/app/home&furnitures.html">Home & furnitures</a>
+        <a href="http://127.0.0.1:5501/src/app/travel.html">travel</a>
+        <a href="http://127.0.0.1:5501/src/app/beauty,toys&more.html">Beauty,Toys &more</a>
+        <a href="http://127.0.0.1:5501/src/app/wheelers.html">wheelers</a>
+    </nav>
+    <body>
+        <div class="container">
+            <h1>Sign Up</h1>
+            <form id="signup-form" onsubmit="validateForm(event)">
+              <label for="username">Username:</label>
+              <input type="text" id="username" name="username" required>
+              <br>
+          
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required>
+              <br>
+          
+              <label for="password">Password:</label>
+              <input type="password" id="password" name="password" required>
+              <br>
+          
+              <label for="confirm-password">Confirm Password:</label>
+              <input type="password" id="confirm-password" name="confirm-password" required>
+              <br>
+              <button onclick="validateForm()" class="btn">SignUp</button>
+             
+            </form>
+            <p id="error-message"></p>
+          </div>
+          
+          <script>
+            function validateForm(event) {
+              event.preventDefault();
+          
+              var username = document.getElementById('username').value;
+              var email = document.getElementById('email').value;
+              var password = document.getElementById('password').value;
+              var confirmPassword = document.getElementById('confirm-password').value;
+              var errorMessage = document.getElementById('error-message');
+          
+              // Simple validation
+              if (username === '' || email === '' || password === '' || confirmPassword === '') {
+                errorMessage.textContent = 'All fields are required';
+                return;
+              }
+          
+              if (password !== confirmPassword) {
+                errorMessage.textContent = 'Password and Confirm Password must match';
+                return;
+              }
+          
+              // Additional validation (e.g., email format)
+              var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+              if (!emailRegex.test(email)) {
+                errorMessage.textContent = 'Invalid email address';
+                return;
+              }
+          
+              // If all validations pass, you can submit the form to the server
+              // Here, you can add code to send the form data to the server
+          
+              errorMessage.textContent = ''; // Clear error message if all validations pass
+              // Additional actions, such as submitting the form to the server, can be added here
+            }
+          </script>
+          
+         
+    </body>

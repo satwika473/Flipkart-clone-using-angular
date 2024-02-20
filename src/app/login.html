@@ -1,0 +1,175 @@
+<head>
+    <title></title>
+    </head>
+    <style>
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #5880de;
+      }
+     header > img {
+        height: auto;
+        max-width: 10rem;
+        width: 100%;
+      }
+      
+      .hi {
+        display: flex;
+      }
+      
+      .hi > button {
+        border: none;
+        padding: 0.4rem 2rem;
+        background-color: transparent;
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: rgb(244, 236, 236);
+        cursor: pointer;
+      }
+      
+      header > input {
+        flex-grow: 0.6;
+        padding: 0.5rem;
+        margin: 0.5rem 0;
+        background-color: aliceblue;
+        border: 2px solid whitesmoke;
+        border-radius: 4px;
+        box-sizing: border-box;
+        font-size: 20px;
+      }
+      
+      .header--nav-login {
+        background-color:  #5880de;
+        color: #fcfdfd !important;
+        font-weight: 300;
+        border-radius: 9px;
+       
+        
+      }
+      
+      form {
+           margin: 10% 20% 20% 30%;
+            background-color: #6339d8; /* White background color for the form */
+            padding: 50px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            max-width:fit-content;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            box-sizing: border-box;
+            background-color: #fff; /* White background color for the input boxes */
+            border: 1px solid #ccc; /* Border color */
+            border-radius: 3px;
+        }
+
+        .btn {
+            width: 100%;
+            padding: 10px;
+            background: linear-gradient(to bottom, #2de8eb 0%, #4255a7 100%); /* Gradient background color for the button */
+            color: #fff;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            transition: background 0.3s ease; 
+        }
+
+        .btn:hover {
+            background: linear-gradient(to bottom, #c185ce 0%, #4bd5da 100%); 
+        }
+
+        h4 {
+            color: #fff; 
+        }
+        .error-message {
+            color: red;
+            margin-bottom: 15px;
+        }
+        .hlo {
+            display: flex;
+            background-color: #333; /* Background color for the navigation bar */
+            padding: 10px;
+            justify-content: space-around;
+            color: #fff; /* Text color for the links */
+        }
+
+        .hlo a {
+            text-decoration: none;
+            color: #fff;
+            padding: 8px 16px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .hlo a:hover {
+            background-color: #555; /* Background color on hover */
+        }
+    
+    h4 a {
+      color: #21d8e5; /* Set link color to a blue shade */
+      text-decoration: none; /* Remove underline */
+      font-weight: bold; /* Add bold font weight */
+    }
+    h4 a:hover {
+      color: #f364d4; /* Change link color on hover */
+    }
+      
+    </style>
+    <header>
+    <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/fkheaderlogo_exploreplus-44005d.svg">
+    <input type="text" placeholder="Search for products,Brands and More">
+    
+    <nav class="hi">
+    <button  class="header--nav-login">
+     <span onclick="window.location.href='login.html'">Login</span>
+          </button>
+    <button>
+     <span onclick="window.location.href='cart.html'">Cart</span>
+          </button>
+    <button>
+     <span onclick="window.location.href='seller.html'">Become a seller</span>
+          </button>
+    </header>
+    <nav class="hlo">
+        <a href="http://127.0.0.1:5501/src/app/grocery.html">Grocery</a>
+        <a href="http://127.0.0.1:5501/src/app/mobile.html">Mobiles</a>
+        <a href="http://127.0.0.1:5501/src/app/fashion.html">Fashion</a>
+        <a href="http://127.0.0.1:5501/src/app/electronics.html">Electronics</a>
+        <a href="http://127.0.0.1:5501/src/app/home&furnitures.html">Home & furnitures</a>
+        <a href="http://127.0.0.1:5501/src/app/travel.html">travel</a>
+        <a href="http://127.0.0.1:5501/src/app/beauty,toys&more.html">Beauty,Toys &more</a>
+        <a href="http://127.0.0.1:5501/src/app/wheelers.html">wheelers</a>
+    </nav>
+    </nav>
+    <body>
+        <form>
+            <label for="username"></label>
+            <input type="text" id="username"placeholder="Enter username"><br>
+            <label for="password"></label>
+            <input type="password" id="password" placeholder="Enter password"><br>
+          <button onclick="validateLogin()" class="btn">Submit</button>
+          <h4>Don't have an account?<a href="http://127.0.0.1:5501/src/app/signup.html">Create one</b></h4>
+        </form>
+        <script>
+            function validateLogin() {
+                var username = document.getElementById("username").value;
+                var password = document.getElementById("password").value;
+                var errorMessage = document.getElementById("error-message");
+    
+                if (username === "" || password === "") {
+                    alert("Enter both the fields");
+                } else if (username !== "demo" || password !== "demo123") {
+                   alert( "Incorrect username or password.");
+                } else {
+                    errorMessage.innerHTML = "";
+                    alert("Login successful! Redirecting...");
+                    // You can redirect or perform further actions here.
+                }
+            }
+        </script>
+    </body>

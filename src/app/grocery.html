@@ -1,0 +1,469 @@
+<head>
+    <title>grocery</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    </head>
+    <style>
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #5880de;
+      }
+     header > img {
+        height: auto;
+        max-width: 10rem;
+        width: 100%;
+      }
+      
+      .hi {
+        display: flex;
+      }
+      
+      .hi > button {
+        border: none;
+        padding: 0.4rem 2rem;
+        background-color: transparent;
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: rgb(244, 236, 236);
+        cursor: pointer;
+      }
+      
+      header > input {
+        flex-grow: 0.6;
+        padding: 0.5rem;
+        margin: 0.5rem 0;
+        background-color: aliceblue;
+        border: 2px solid whitesmoke;
+        border-radius: 4px;
+        box-sizing: border-box;
+        font-size: 20px;
+      }
+      
+      .header--nav-login {
+        background-color: rgb(253, 245, 245) !important;
+        color: #0e0f0f !important;
+        font-weight: 400;
+      }
+      .hlo {
+            display: flex;
+            background-color: #333; /* Background color for the navigation bar */
+            padding: 10px;
+            justify-content: space-around;
+            color: #fff; /* Text color for the links */
+        }
+
+        .hlo a {
+            text-decoration: none;
+            color: #fff;
+            padding: 8px 16px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .hlo a:hover {
+            background-color: #555; /* Background color on hover */
+        }
+        h4{
+            text-decoration: line-through;
+            color:#555;
+        }
+      h1{
+        font-size:  25px;
+      }
+    </style>
+    <header>
+    <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/fkheaderlogo_exploreplus-44005d.svg">
+    <input type="text" placeholder="Search for products,Brands and More">
+    
+    <nav class="hi">
+    <button  class="header--nav-login">
+     <span onclick="window.location.href='login.html'">Login</span>
+          </button>
+    <button>
+     <span onclick="window.location.href='cart.html'">Cart</span>
+          </button>
+    <button>
+     <span onclick="window.location.href='seller.html'">Become a seller</span>
+          </button>
+    </header>
+    <nav class="hlo">
+        <a href="http://127.0.0.1:5501/src/app/grocery.html">Grocery</a>
+        <a href="http://127.0.0.1:5501/src/app/mobile.html">Mobiles</a>
+        <a href="http://127.0.0.1:5501/src/app/fashion.html">Fashion</a>
+        <a href="http://127.0.0.1:5501/src/app/electronics.html">Electronics</a>
+        <a href="http://127.0.0.1:5501/src/app/home&furnitures.html">Home & furnitures</a>
+        <a href="http://127.0.0.1:5501/src/app/travel.html">travel</a>
+        <a href="http://127.0.0.1:5501/src/app/beauty,toys&more.html">Beauty,Toys &more</a>
+        <a href="http://127.0.0.1:5501/src/app/wheelers.html">wheelers</a>
+    </nav>
+    <body>
+        
+<h1>Grocery Items</h1><br>
+<div class="grid gap-8 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 p-4 md:p-2 xl:p-5">
+
+ 
+ <div
+     class="relative bg-white border rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 transform transition duration-500 hover:scale-105">
+     
+         
+     
+     <div class="p-2 flex justify-center">
+         <a href="">
+             <img class="rounded-md"
+                 src="https://rukminim2.flixcart.com/image/280/280/xif0q/cookie-biscuit/n/u/1/-original-imagvqfdpdsyv5bk.jpeg?q=70"
+                 loading="lazy">
+         </a>
+     </div>
+
+     <div class="px-4 pb-3">
+         <div>
+             <a href="#">
+                 <h3
+                     class="text-xl font-semibold tracking-tight hover:text-violet-800 dark:hover:text-violet-300 text-gray-900 dark:text-white ">
+               Cadbury Chocobakes Cookies
+                     ₹56<h4>₹106</h4>
+                     50% off
+                     167 g
+                    
+                   
+                 </h3>
+                 
+             </a>
+         </div>
+     </div>
+
+ </div>
+
+ <!-- card  -->
+ <div
+     class="relative bg-white border rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 transform transition duration-500 hover:scale-105">
+    
+
+     <div class="p-2 flex justify-center">
+         <a href="#">
+             <img class="rounded-md"
+                 src="https://rukminim2.flixcart.com/image/280/280/kqidx8w0/soya-chunk/b/u/t/fortune-soya-chunks-box-box-soya-chunks-fortune-original-imag4gbyxzjh67d4.jpeg?q=70"
+                 loading="lazy">
+         </a>
+     </div>
+
+     <div class="px-4 pb-3">
+         <div>
+             <a href="#">
+                 <h3
+                     class="text-xl font-semibold tracking-tight hover:text-violet-800 dark:hover:text-violet-300 text-gray-900 dark:text-white ">
+                  Fortune Soya Chunks
+                        ₹46<h4>₹76</h4>
+                        30% off
+                        120 g
+                       
+                 </h3>
+             </a>
+
+         </div>
+     </div>
+ </div>
+
+ <!-- card  -->
+ <div
+     class="relative bg-white border rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 transform transition duration-500 hover:scale-105">
+     
+     <div class="p-2 flex justify-center">
+         <a href="#">
+             <img class="rounded-md"
+                 src="https://rukminim2.flixcart.com/image/280/280/kuczmvk0/cookie-biscuit/3/4/a/g-gold-biscuits-parle-original-imag7hvdfyndrvtx.jpeg?q=70"loading="lazy">
+         </a>
+     </div>
+
+     <div class="px-4 pb-3">
+         <div>
+             <a href="#">
+                 <h3
+                     class="text-xl font-semibold tracking-tight hover:text-violet-800 dark:hover:text-violet-300 text-gray-900 dark:text-white ">
+                    
+                        PARLE G Gold Biscuits Plain (Plain Biscuit)
+                        ₹110<h4>₹140</h4>
+                        21% off
+                        1 kg
+                    
+                 </h3>
+             </a>
+             
+         </div>
+     </div>
+ </div>
+
+ <!-- card  -->
+ <div
+     class="relative bg-white border rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 transform transition duration-500 hover:scale-105">
+
+     
+
+     <div class="p-2 flex justify-center">
+         <a href="https://tailwindflex.com/tag/form">
+             <img class="rounded-md"
+                 src="https://rukminim2.flixcart.com/image/280/280/xif0q/vermicelli/9/y/i/-original-imagxz8byregjvr4.jpeg?q=70"
+                 loading="lazy">
+         </a>
+     </div>
+
+
+     <div class="px-4 pb-3">
+         <div>
+             <a href="https://tailwindflex.com/tag/form">
+                 <h3
+                     class="text-xl font-semibold tracking-tight hover:text-violet-800 dark:hover:text-violet-300 text-gray-900 dark:text-white ">
+                    
+                        MTR Vermicelli 850 g (Plain Semiya)
+                        ₹57<h4> ₹87</h4>
+                        34% off
+                        850 g
+                    
+                 </h3>
+             </a>
+
+         </div>
+     </div>
+ </div>
+ <div
+     class="relative bg-white border rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 transform transition duration-500 hover:scale-105">
+     
+     <div class="p-2 flex justify-center">
+         <a href="#">
+             <img class="rounded-md"
+                 src="https://rukminim2.flixcart.com/image/280/280/xif0q/chocolate/f/v/w/-original-imagwmkb4n92zyyc.jpeg?q=70"
+                 loading="lazy">
+         </a>
+     </div>
+
+
+     <div class="px-4 pb-3">
+         <div>
+             <a href="#">
+                 <h3
+                     class="text-xl font-semibold tracking-tight hover:text-violet-800 dark:hover:text-violet-300 text-gray-900 dark:text-white ">
+                  
+                    Cadbury Dairy Milk Silk Mousse Chocolate Bars
+                    ₹85<h4>₹90</h4>
+                    5% off
+                    50 g
+                   
+                     
+                 </h3>
+             </a>
+
+         </div>
+     </div>
+ </div>
+
+ <!-- card  -->
+ <div
+     class="relative bg-white border rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 transform transition duration-500 hover:scale-105">
+    
+     <div class="p-2 flex justify-center">
+         <a href="#">
+             <img class="rounded-md"
+                 src="https://rukminim2.flixcart.com/image/280/280/xif0q/dish-cleaning-gel/z/z/x/-original-imagts4zgargfcgz.jpeg?q=70"
+                 loading="lazy">
+         </a>
+     </div>
+     <div class="px-4 pb-3">
+         <div>
+             <a href="#">
+                 <h3
+                     class="text-xl font-semibold tracking-tight hover:text-violet-800 dark:hover:text-violet-300 text-gray-900 dark:text-white ">
+                   
+                        Vim Power Dish Cleaning Gel
+                        ₹276<h4>₹445</h4>
+                        37% off
+                        2 L
+                    
+                 </h3>
+             </a>
+
+         </div>
+     </div>
+ </div>
+
+ <!-- card  -->
+ <div
+     class="relative bg-white border rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 transform transition duration-500 hover:scale-105">
+
+    
+
+     <div class="p-2 flex justify-center">
+         <a href="https://tailwindflex.com/tag/badge">
+             <img class="rounded-md"
+                 src="https://rukminim2.flixcart.com/image/280/280/xif0q/shampoo/g/n/a/-original-imagryeszhjmrjmr.jpeg?q=70"
+                 loading="lazy">
+         </a>
+     </div>
+
+     <div class="px-4 pb-3">
+         <div>
+             <a href="https://tailwindflex.com/tag/badge">
+                 <h3
+                     class="text-xl font-semibold tracking-tight hover:text-violet-800 dark:hover:text-violet-300 text-gray-900 dark:text-white ">
+                   
+                        Clinic Plus Strong & Long Health Shampoo
+                        ₹105<h4>₹115</h4>
+                        8% off
+                        175 ml
+                 
+                 </h3>
+             </a>
+           
+         </div>
+     </div>
+ </div>
+
+ <!-- card  -->
+ <div
+     class="relative bg-white border rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 transform transition duration-500 hover:scale-105">
+     
+     <div class="p-2 flex justify-center">
+         <a href="#">
+             <img class="rounded-md"
+                 src="https://rukminim2.flixcart.com/image/280/280/k3orqfk0/combo-kit/z/h/x/hamilton-deo-200-ml-black-code-soap-125g-den408-denver-original-imafgccjvqnngdze.jpeg?q=70" loading="lazy">
+         </a>
+     </div>
+
+
+     <div class="px-4 pb-3">
+         <div>
+             <a href="#">
+                 <h3
+                     class="text-xl font-semibold tracking-tight hover:text-violet-800 dark:hover:text-violet-300 text-gray-900 dark:text-white ">
+                    
+                        DENVER Hamilton Deodorant Spray - For Men
+                        ₹168<h4>₹280</h4>
+                        40% off
+                        200 ml
+                    
+                 </h3>
+             </a>
+
+         </div>
+     </div>
+
+ </div>
+
+ <!-- card  -->
+ <div
+     class="relative bg-white border rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 transform transition duration-500 hover:scale-105">
+     
+     <div class="p-2 flex justify-center">
+         <a href="#">
+             <img class="rounded-md"
+                 src="https://rukminim2.flixcart.com/image/280/280/l09w8sw0/moisturizer-cream/t/f/l/-original-imagc3j9xev7dzzg.jpeg?q=70"  loading="lazy">
+         </a>
+     </div>
+
+     <div class="px-4 pb-3">
+         <div>
+             <a href="#">
+                 <h3
+                     class="text-xl font-semibold tracking-tight hover:text-violet-800 dark:hover:text-violet-300 text-gray-900 dark:text-white ">
+                     POND's Bright Beauty Day Brightening Face Cream | SPF 15
+                     ₹137<h4> ₹145</h4>
+                     5% off
+                     35 g
+                 </h3>
+             </a>
+             
+         </div>
+     </div>
+ </div>
+
+ <!-- card  -->
+ <div
+     class="relative bg-white border rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 transform transition duration-500 hover:scale-105">
+     
+
+     <div class="p-2 flex justify-center">
+         <a href="https://tailwindflex.com/tag/call-to-action">
+             <img class="rounded-md"
+                 src="https://rukminim2.flixcart.com/image/280/280/xif0q/air-freshener/v/v/q/-original-imagsf452qtczgub.jpeg?q=70" loading="lazy">
+         </a>
+     </div>
+
+     <div class="px-4 pb-3">
+         <div>
+             <a href="https://tailwindflex.com/tag/call-to-action">
+                 <h3
+                     class="text-xl font-semibold tracking-tight hover:text-violet-800 dark:hover:text-violet-300 text-gray-900 dark:text-white ">
+                    
+                        Godrej Aer Room Freshener - Petal Crush Pink Spray
+                        ₹111<h4>₹169</h4>
+                        34% off
+                        220 ml
+                 
+                 </h3>
+             </a>
+            
+         </div>
+     </div>
+ </div>
+
+ <!-- card  -->
+ <div
+     class="relative bg-white border rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 transform transition duration-500 hover:scale-105">
+     
+     <div class="p-2 flex justify-center">
+         <a href="#">
+             <img class="rounded-md"
+                 src="https://rukminim2.flixcart.com/image/280/280/xif0q/hand-wash-sanitizer/r/s/e/-original-imagp25gzzny3tzy.jpeg?q=70"
+                 loading="lazy">
+         </a>
+     </div>
+
+     <div class="px-4 pb-3">
+         <div>
+             <a href="#">
+                 <h3
+                     class="text-xl font-semibold tracking-tight hover:text-violet-800 dark:hover:text-violet-300 text-gray-900 dark:text-white ">
+                    
+                        Dettol Instant , Original Hand Sanitizer Bottle
+                        ₹23<h4>₹25</h4>
+                        8% off
+                        0.05 L
+                  
+                 </h3>
+             </a>
+         </div>
+     </div>
+ </div>
+
+ <!-- card  -->
+ <div
+     class="relative bg-white border rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 transform transition duration-500 hover:scale-105">
+    
+     <div class="p-2 flex justify-center">
+         <a href="#">
+             <img class="rounded-md"
+                 src="https://rukminim2.flixcart.com/image/280/280/l15bxjk0/milk/g/2/5/200-sterilized-flavoured-strawberry-milk-plastic-bottle-flavored-original-imagcrw44ghgmrxp.jpeg?q=70" loading="lazy">
+         </a>
+     </div>
+
+
+     <div class="px-4 pb-3">
+         <div>
+             <a href="#">
+                 <h3
+                     class="text-xl font-semibold tracking-tight hover:text-violet-800 dark:hover:text-violet-300 text-gray-900 dark:text-white ">
+                    
+                    
+                    Heritage Sterilized Flavoured Strawberry Milk
+                    ₹22<h4> ₹30</h4>
+                    26% off
+                    200 ml
+                 </h3>
+             </a>
+           
+         </div>
+     </div>
+ </div>
+
+</div>
+    </body>

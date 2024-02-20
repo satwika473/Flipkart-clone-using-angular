@@ -1,0 +1,443 @@
+<head>
+    <title></title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    </head>
+    <style>
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #5880de;
+      }
+     header > img {
+        height: auto;
+        max-width: 10rem;
+        width: 100%;
+      }
+      
+      .hi {
+        display: flex;
+      }
+      
+      .hi > button {
+        border: none;
+        padding: 0.4rem 2rem;
+        background-color: transparent;
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: rgb(244, 236, 236);
+        cursor: pointer;
+      }
+      
+      header > input {
+        flex-grow: 0.6;
+        padding: 0.5rem;
+        margin: 0.5rem 0;
+        background-color: aliceblue;
+        border: 2px solid whitesmoke;
+        border-radius: 4px;
+        box-sizing: border-box;
+        font-size: 20px;
+      }
+      
+      .header--nav-login {
+        background-color: rgb(253, 245, 245) !important;
+        color: #0e0f0f !important;
+        font-weight: 400;
+      }
+      h4{
+        text-decoration: line-through;
+        color: #353939;
+      }
+      h1{
+        font-size: 25px;
+      }
+      .hlo {
+            display: flex;
+            background-color: #333; /* Background color for the navigation bar */
+            padding: 10px;
+            justify-content: space-around;
+            color: #fff; /* Text color for the links */
+        }
+
+        .hlo a {
+            text-decoration: none;
+            color: #fff;
+            padding: 8px 16px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .hlo a:hover {
+            background-color: #555; /* Background color on hover */
+        }
+    </style>
+    <header>
+    <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/fkheaderlogo_exploreplus-44005d.svg">
+    <input type="text" placeholder="Search for products,Brands and More">
+    
+    <nav class="hi">
+    <button  class="header--nav-login">
+     <span onclick="window.location.href='login.html'">Login</span>
+          </button>
+    <button>
+     <span onclick="window.location.href='cart.html'">Cart</span>
+          </button>
+    <button>
+     <span onclick="window.location.href='seller.html'">Become a seller</span>
+          </button>
+    </header>
+    <nav class="hlo">
+        <a href="http://127.0.0.1:5501/src/app/grocery.html">Grocery</a>
+        <a href="http://127.0.0.1:5501/src/app/mobile.html">Mobiles</a>
+        <a href="http://127.0.0.1:5501/src/app/fashion.html">Fashion</a>
+        <a href="http://127.0.0.1:5501/src/app/electronics.html">Electronics</a>
+        <a href="http://127.0.0.1:5501/src/app/home&furnitures.html">Home & furnitures</a>
+        <a href="http://127.0.0.1:5501/src/app/travel.html">travel</a>
+        <a href="http://127.0.0.1:5501/src/app/beauty,toys&more.html">Beauty,Toys &more</a>
+        <a href="http://127.0.0.1:5501/src/app/wheelers.html">wheelers</a>
+    </nav>
+    <body>
+        
+<h1>Fashion</h1>
+<div class="grid gap-8 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 p-4 md:p-2 xl:p-5">
+
+ 
+ <div
+     class="relative bg-white border rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 transform transition duration-500 hover:scale-105">
+     
+         
+     
+     <div class="p-2 flex justify-center">
+         <a href="">
+             <img class="rounded-md"
+                 src="https://rukminim2.flixcart.com/image/612/612/ksuowi80/shirt/e/k/s/xxl-frml-st2-vebnor-original-imag6bkekuzzuq7q.jpeg?q=70"
+                 loading="lazy">
+         </a>
+     </div>
+
+     <div class="px-4 pb-3">
+         <div>
+             <a href="#">
+                 <h3
+                     class="text-xl font-semibold tracking-tight hover:text-violet-800 dark:hover:text-violet-300 text-gray-900 dark:text-white ">
+                     Men Regular Fit Solid Spread Collar Formal Shirt
+                     ₹289<h4>₹1,299</h4>77% off
+                     
+                 </h3>
+                 
+             </a>
+         </div>
+     </div>
+
+ </div>
+
+ <!-- card  -->
+ <div
+     class="relative bg-white border rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 transform transition duration-500 hover:scale-105">
+    
+
+     <div class="p-2 flex justify-center">
+         <a href="#">
+             <img class="rounded-md"
+                 src="https://rukminim2.flixcart.com/image/612/612/xif0q/shirt/m/o/t/l-st1-vebnor-original-imagmsyxhvkrfjgz.jpeg?q=70"
+                 loading="lazy">
+         </a>
+     </div>
+
+     <div class="px-4 pb-3">
+         <div>
+             <a href="#">
+                 <h3
+                     class="text-xl font-semibold tracking-tight hover:text-violet-800 dark:hover:text-violet-300 text-gray-900 dark:text-white ">
+                     Men Regular Fit Solid Mandarin Collar Casual Shirt
+                     ₹299<h4>₹999</h4>70% off
+                     
+                 </h3>
+             </a>
+
+         </div>
+     </div>
+ </div>
+
+ <!-- card  -->
+ <div
+     class="relative bg-white border rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 transform transition duration-500 hover:scale-105">
+     
+     <div class="p-2 flex justify-center">
+         <a href="#">
+             <img class="rounded-md"
+                 src="https://rukminim2.flixcart.com/image/612/612/xif0q/sari/9/7/q/free-urvashi-divastri-unstitched-original-imagxgh3zgwm6rrm.jpeg?q=70"loading="lazy">
+         </a>
+     </div>
+
+     <div class="px-4 pb-3">
+         <div>
+             <a href="#">
+                 <h3
+                     class="text-xl font-semibold tracking-tight hover:text-violet-800 dark:hover:text-violet-300 text-gray-900 dark:text-white ">
+                     Woven Banarasi Jacquard Saree
+                     Blue
+                     ₹449<h4>₹1,999</h4>77% off
+                     Only few left
+                 </h3>
+             </a>
+             
+         </div>
+     </div>
+ </div>
+
+ <!-- card  -->
+ <div
+     class="relative bg-white border rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 transform transition duration-500 hover:scale-105">
+
+     
+
+     <div class="p-2 flex justify-center">
+         <a href="https://tailwindflex.com/tag/form">
+             <img class="rounded-md"
+                 src="https://rukminim2.flixcart.com/image/612/612/xif0q/sari/6/f/b/free-new-cotton-silk-saree-dipali-fashion-unstitched-original-imagqge4phhysghg.jpeg?q=70"
+                 loading="lazy">
+         </a>
+     </div>
+
+
+     <div class="px-4 pb-3">
+         <div>
+             <a href="https://tailwindflex.com/tag/form">
+                 <h3
+                     class="text-xl font-semibold tracking-tight hover:text-violet-800 dark:hover:text-violet-300 text-gray-900 dark:text-white ">
+                     Woven, Embellished Banarasi Linen, Pure Cotton Saree
+                     Purple
+                     ₹549<h4>₹3,999</h4>86% off
+                 </h3>
+             </a>
+
+         </div>
+     </div>
+ </div>
+ <div
+     class="relative bg-white border rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 transform transition duration-500 hover:scale-105">
+     
+     <div class="p-2 flex justify-center">
+         <a href="#">
+             <img class="rounded-md"
+                 src="https://rukminim2.flixcart.com/image/612/612/xif0q/kurta/8/p/g/xl-greyblue-ganeshjisk-5xl-seakart-original-imaghkab3tezksjy.jpeg?q=70"
+                 loading="lazy">
+         </a>
+     </div>
+
+
+     <div class="px-4 pb-3">
+         <div>
+             <a href="#">
+                 <h3
+                     class="text-xl font-semibold tracking-tight hover:text-violet-800 dark:hover:text-violet-300 text-gray-900 dark:text-white ">
+                     SEAKART
+                     Women Printed Viscose Rayon Anarkali Kurta
+                     ₹429<h4>₹2,499</h4>82% off
+                 </h3>
+             </a>
+
+         </div>
+     </div>
+ </div>
+
+ <!-- card  -->
+ <div
+     class="relative bg-white border rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 transform transition duration-500 hover:scale-105">
+    
+     <div class="p-2 flex justify-center">
+         <a href="#">
+             <img class="rounded-md"
+                 src="https://rukminim2.flixcart.com/image/612/612/ku5ufm80/kurta/6/w/k/s-h-n-233-h-n-original-imag7cdgsz9pamnt.jpeg?q=70"
+                 loading="lazy">
+         </a>
+     </div>
+     <div class="px-4 pb-3">
+         <div>
+             <a href="#">
+                 <h3
+                     class="text-xl font-semibold tracking-tight hover:text-violet-800 dark:hover:text-violet-300 text-gray-900 dark:text-white ">
+                     AAYUMI
+                     Women Printed Cotton Blend Anarkali Kurta
+                     Black
+                     
+                     ₹498<h4>₹2,499</h4>80% off
+                     
+                 </h3>
+             </a>
+
+         </div>
+     </div>
+ </div>
+
+ <!-- card  -->
+ <div
+     class="relative bg-white border rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 transform transition duration-500 hover:scale-105">
+
+    
+
+     <div class="p-2 flex justify-center">
+         <a href="https://tailwindflex.com/tag/badge">
+             <img class="rounded-md"
+                 src="https://rukminim2.flixcart.com/image/612/612/xif0q/lehenga-choli/0/k/i/free-half-sleeve-pochampalli-pattu-fabcartz-original-imaggvyjfgavuzyf.jpeg?q=70"
+                 loading="lazy">
+         </a>
+     </div>
+
+     <div class="px-4 pb-3">
+         <div>
+             <a href="https://tailwindflex.com/tag/badge">
+                 <h3
+                     class="text-xl font-semibold tracking-tight hover:text-violet-800 dark:hover:text-violet-300 text-gray-900 dark:text-white ">
+                     Embroidered Semi Stitched Lehenga Choli
+                     Dark Green
+                     
+                     ₹729<h4>₹2,999</h4>75% off
+                     
+                 </h3>
+             </a>
+           
+         </div>
+     </div>
+ </div>
+
+ <!-- card  -->
+ <div
+     class="relative bg-white border rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 transform transition duration-500 hover:scale-105">
+     
+     <div class="p-2 flex justify-center">
+         <a href="#">
+             <img class="rounded-md"
+                 src="https://rukminim2.flixcart.com/image/612/612/xif0q/sari/b/1/q/free-1-lehnaga-saree-navy-blue-dharmanandan-fashionst-unstitched-original-imaghv7y5guzxjvg.jpeg?q=70" loading="lazy">
+         </a>
+     </div>
+
+
+     <div class="px-4 pb-3">
+         <div>
+             <a href="#">
+                 <h3
+                     class="text-xl font-semibold tracking-tight hover:text-violet-800 dark:hover:text-violet-300 text-gray-900 dark:text-white ">
+                     Self Design Semi Stitched Lehenga Choli
+Dark Blue
+
+₹786<h4>₹1,999</h4>60% off
+Hot Deal
+                 </h3>
+             </a>
+
+         </div>
+     </div>
+
+ </div>
+
+ <!-- card  -->
+ <div
+     class="relative bg-white border rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 transform transition duration-500 hover:scale-105">
+     
+     <div class="p-2 flex justify-center">
+         <a href="#">
+             <img class="rounded-md"
+                 src="https://rukminim2.flixcart.com/image/612/612/xif0q/t-shirt/y/4/d/m-msts-001-olive-clickwell-original-imagxjxuppyawgt3.jpeg?q=70"  loading="lazy">
+         </a>
+     </div>
+
+     <div class="px-4 pb-3">
+         <div>
+             <a href="#">
+                 <h3
+                     class="text-xl font-semibold tracking-tight hover:text-violet-800 dark:hover:text-violet-300 text-gray-900 dark:text-white ">
+                     Men Striped Round Neck Cotton Blend Dark Green T-Shirt
+                     ₹305<h4>₹1,199</h4>74% off
+                  
+                 </h3>
+             </a>
+             
+         </div>
+     </div>
+ </div>
+
+ <!-- card  -->
+ <div
+     class="relative bg-white border rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 transform transition duration-500 hover:scale-105">
+     
+
+     <div class="p-2 flex justify-center">
+         <a href="https://tailwindflex.com/tag/call-to-action">
+             <img class="rounded-md"
+                 src="https://rukminim2.flixcart.com/image/612/612/xif0q/t-shirt/2/2/m/m-t599-tmbl-eyebogler-original-imagh42hyna9uqrk.jpeg?q=70" loading="lazy">
+         </a>
+     </div>
+
+     <div class="px-4 pb-3">
+         <div>
+             <a href="https://tailwindflex.com/tag/call-to-action">
+                 <h3
+                     class="text-xl font-semibold tracking-tight hover:text-violet-800 dark:hover:text-violet-300 text-gray-900 dark:text-white ">
+                     Men Checkered Hooded Neck Cotton Blend Blue T-Shirt
+                     ₹279<h4>₹2,499</h4>88% off
+                    
+                 </h3>
+             </a>
+            
+         </div>
+     </div>
+ </div>
+
+ <!-- card  -->
+ <div
+     class="relative bg-white border rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 transform transition duration-500 hover:scale-105">
+     
+     <div class="p-2 flex justify-center">
+         <a href="#">
+             <img class="rounded-md"
+                 src="https://rukminim2.flixcart.com/image/612/612/xif0q/shoe/i/v/v/3-long-heel-black-jm-looks-black-original-imagjugr4nbvgpsw.jpeg?q=70"
+                 loading="lazy">
+         </a>
+     </div>
+
+     <div class="px-4 pb-3">
+         <div>
+             <a href="#">
+                 <h3
+                     class="text-xl font-semibold tracking-tight hover:text-violet-800 dark:hover:text-violet-300 text-gray-900 dark:text-white ">
+                     Boots For Women
+                     Black
+                     
+                     ₹999<h4>₹1,995</h4>49% off
+                 </h3>
+             </a>
+         </div>
+     </div>
+ </div>
+
+ <!-- card  -->
+ <div
+     class="relative bg-white border rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 transform transition duration-500 hover:scale-105">
+    
+     <div class="p-2 flex justify-center">
+         <a href="#">
+             <img class="rounded-md"
+                 src="https://rukminim2.flixcart.com/image/612/612/xif0q/kurta/v/k/n/s-kurta-pajama-rajwadi-fashion-original-imagjvhyhymdevgx.jpeg?q=70" loading="lazy">
+         </a>
+     </div>
+
+
+     <div class="px-4 pb-3">
+         <div>
+             <a href="#">
+                 <h3
+                     class="text-xl font-semibold tracking-tight hover:text-violet-800 dark:hover:text-violet-300 text-gray-900 dark:text-white ">
+                     Men Cotton Blend Kurta Pant Set
+₹499<h4>₹1,299</h4>61% off
+                 </h3>
+             </a>
+           
+         </div>
+     </div>
+ </div>
+
+</div>
+    </body>
